@@ -1,0 +1,35 @@
+
+# Task 2: Create a database by Adrian Pena
+
+DROP DATABASE IF EXISTS HR_AP;
+CREATE DATABASE IF NOT EXISTS HR_AP;
+USE HR_AP;
+
+USE HR_AP;
+
+SHOW DATABASES;
+
+# Create Table by Adrian Pena
+
+CREATE TABLE EMPLOYEE_AP(
+C0DE CHAR(3) PRIMARY KEY,
+FIRST_NAME_AP VARCHAR(18) NOT NULL,
+MIDDLE_NAME_AP VARCHAR(18),
+LAST_NAME_AP VARCHAR(18) NOT NULL,
+PHONE_NUMBER_AP CHAR(14) NOT NULL UNIQUE
+);
+
+DESCRIBE EMPLOYEE_AP;
+
+SELECT * FROM EMPLOYEE_AP; 
+INSERT INTO EMPLOYEE_AP VALUES
+(235, 'Joe', 'Peter', 'Doe', '(981) 884-6814'),
+(239, 'Mary', null, 'Doe','(981) 083-8913'),
+(240, 'Michael', 'Leonardo', 'Smith','(981) 083-9913'),
+(241, 'Eddie', 'Luis', 'Watson','(981) 083-7913'),
+(242, 'Nancy', null, 'Holmes','(981) 083-6913'),
+(243, 'Amanda', 'emille', 'Sherlock','(981) 083-5913'),
+(244, 'Abbie', null, 'Moriarty','(981) 083-4913');
+
+SELECT * FROM EMPLOYEE_AP; 
+SHOW TABLES;
