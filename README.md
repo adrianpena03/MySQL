@@ -1,2 +1,2 @@
 # MySQL
-Simple SQL Query
+SQL Project
